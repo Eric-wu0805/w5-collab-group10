@@ -165,7 +165,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 | 組員姓名 | 負責分支 | 主要修改內容 | PR 連結 | 是否完成 |
 | -------- | -------- | ------------ | ------- | -------- |
 |吳宸宇    |feature/eric| 風格和搜尋記錄功能|gh pr checkout 2| ✅ / ❌  |
-|林富閎    |feature/member-a|在 .message 裡加上時間戳 span|         | ✅ / ❌  |
+|林富閎    |feature/member-a|在 .message 裡加上時間戳 span|https://github.com/Eric-wu0805/w5-collab-group10/pull/3#issue-4132038751| ✅ / ❌  |
 |          |          |              |         | ✅ / ❌  |
 |          |          |              |         | ✅ / ❌  |
 |          |          |              |         | ✅ / ❌  |
