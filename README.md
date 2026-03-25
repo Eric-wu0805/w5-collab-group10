@@ -216,6 +216,8 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 （貼上截圖）
 
 ---
+<img width="1013" height="833" alt="image" src="https://github.com/user-attachments/assets/ef90d70f-f4b2-4606-9678-8acdf485110e" />
+
 
 ## 三、遇到的問題與解決方式
 
