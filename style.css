@@ -93,6 +93,27 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
 .input-area button:hover { opacity: 0.85; }
 
 /* ── 組員 D 任務：在這裡加 body.dark 深色模式樣式 ── */
+body.dark { background-color: #121212; color: #e0e0e0; }
+body.dark .container { background: #1e1e1e; box-shadow: 0 4px 20px rgba(0,0,0,0.8); }
+body.dark header { background: #333; }
+body.dark #chat-box { background: #1e1e1e; }
+body.dark .message.bot { background: #2c2c2c; color: #e0e0e0; }
+body.dark .input-area { border-top-color: #333; }
+body.dark .input-area input { background: #2c2c2c; border-color: #444; color: #e0e0e0; }
+body.dark footer { border-top-color: #222; }
+
+#theme-toggle {
+  float: right;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: -30px; /* 位置調整 */
+}
+#theme-toggle:hover { background: rgba(255,255,255,0.3); }
 
 /* ── 組員 E 任務：在這裡加 footer 樣式 ── */
 footer {
