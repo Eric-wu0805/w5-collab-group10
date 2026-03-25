@@ -198,7 +198,8 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 （貼上截圖）
 
----
+---<img width="1713" height="885" alt="image" src="https://github.com/user-attachments/assets/c22de0c7-8fea-481b-a58f-d2651e8712e4" />
+
 
 ### 2-4 Merge 成功截圖（必填）
 
