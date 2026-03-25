@@ -169,6 +169,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 |葉政毅          |feature/james|新增貼圖功能 |https://github.com/Eric-wu0805/w5-collab-group10/pull/4#issue-4132081179         | ✅ / ❌  |
 |林富閎|feature/member-c|在 header 下方加字數統計 p 元素 |https://github.com/Eric-wu0805/w5-collab-group10/pull/6#issue-4132093679| ✅ / ❌  |
 |林富閎          |feature/member-d|在 header 加深色模式切換按鈕|https://github.com/Eric-wu0805/w5-collab-group10/pull/7#issue-4132138921| ✅ / ❌  |
+|張承新          |feature/member-b|新增清除對話按鈕與功能 |TBD| ✅ / ❌  |
 
 ---
 
@@ -238,7 +239,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 透過這次體驗，我深刻體會到版本控制在團隊開發中的重要性，確保大家能安全且同時地進行專案開發。
 
-**（組員姓名）：**
+**（張承新）：**這次練習我負責實作「清除對話」功能。從建立分支到發 PR，讓我更熟悉 Git 的操作流程，也學會了如何撰寫清楚的 PR 描述與大家協作。
 
 **（組員姓名）：**
 
