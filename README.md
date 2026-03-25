@@ -166,7 +166,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 | -------- | -------- | ------------ | ------- | -------- |
 |吳宸宇    |feature/eric| 風格和搜尋記錄功能|[gh pr checkout 2](https://github.com/Eric-wu0805/w5-collab-group10/pull/2#issue-4132033175)| ✅ / ❌  |
 |林富閎    |feature/member-a|在 .message 裡加上時間戳 span|https://github.com/Eric-wu0805/w5-collab-group10/pull/3#issue-4132038751| ✅ / ❌  |
-|          |          |              |         | ✅ / ❌  |
+|葉政毅          |feature/james|新增貼圖功能 |https://github.com/Eric-wu0805/w5-collab-group10/pull/4#issue-4132081179         | ✅ / ❌  |
 |          |          |              |         | ✅ / ❌  |
 |          |          |              |         | ✅ / ❌  |
 
