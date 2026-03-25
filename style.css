@@ -3,8 +3,8 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: sans-serif;
-  background-color: #f0f4f8;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: #e5e0d8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,9 +12,10 @@ body {
 }
 
 .container {
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  background: #fcfbf9;
+  border-radius: 4px;
+  border: 1px solid #d3c5b5;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   width: 480px;
   max-width: 95vw;
   overflow: hidden;
@@ -24,12 +25,14 @@ body {
    組長任務：修改 background 顏色
    ──────────────────────────────────── */
 header {
-  background: #4f8ef7;
-  color: white;
-  padding: 20px 24px;
+  background: #5c1b22;
+  color: #dfc8a8;
+  padding: 24px 24px;
+  border-bottom: 4px double #dfc8a8;
+  text-align: center;
 }
-header h1 { font-size: 20px; }
-header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
+header h1 { font-size: 24px; font-weight: normal; letter-spacing: 2px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
+header .subtitle { font-size: 14px; opacity: 0.9; margin-top: 8px; font-style: italic; font-family: 'Georgia', serif; }
 
 #chat-box {
   height: 360px;
@@ -49,9 +52,25 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
 }
 
 .message.bot {
-  background: #f0f4f8;
-  color: #333;
+  background: #f4f0ea;
+  color: #4a4036;
+  border: 1px solid #e0d5c1;
+  border-radius: 4px 12px 12px 12px;
   align-self: flex-start;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+}
+
+/* 貼圖樣式 */
+.message.sticker-message {
+  background: transparent;
+  padding: 0;
+}
+
+.message .sticker {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 12px;
+  display: block;
 }
 
 /* ── 組員 A 任務：在這裡加 .timestamp 樣式 ── */
@@ -63,41 +82,71 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
   text-align: right;
 }
 .message.user {
-  background: #4f8ef7;
-  color: white;
+  background: #5c1b22;
+  color: #fcfbf9;
+  border-radius: 12px 4px 12px 12px;
   align-self: flex-end;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
 .input-area {
   display: flex;
   padding: 16px;
   gap: 10px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #e0d5c1;
+  background: #f8f6f0;
 }
 
 .input-area input {
   flex: 1;
   padding: 10px 14px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid #c8bba6;
+  background: #fcfbf9;
+  border-radius: 4px;
+  font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 14px;
   outline: none;
+  color: #333;
 }
 
-.input-area input:focus { border-color: #4f8ef7; }
+.input-area input:focus { border-color: #5c1b22; }
 
 /* ── 組員 B 任務：在這裡加清除按鈕樣式 ── */
 .input-area button {
-  background: #4f8ef7;
-  color: white;
-  border: none;
+  background: #5c1b22;
+  color: #dfc8a8;
+  border: 1px solid #4a131a;
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-.input-area button:hover { opacity: 0.85; }
+.input-area button:hover { background: #4a131a; box-shadow: 1px 1px 5px rgba(0,0,0,0.3); }
+
+.search-area {
+  padding: 10px 16px;
+  background: #f8f6f0;
+  border-bottom: 1px solid #e0d5c1;
+}
+
+.search-area input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #c8bba6;
+  background: #fcfbf9;
+  border-radius: 4px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 14px;
+  outline: none;
+  color: #333;
+}
+
+.search-area input:focus { border-color: #5c1b22; }
 
 /* ── 組員 D 任務：在這裡加 body.dark 深色模式樣式 ── */
 body.dark { background-color: #121212; color: #e0e0e0; }
@@ -126,7 +175,10 @@ body.dark footer { border-top-color: #222; }
 footer {
   padding: 10px 24px;
   font-size: 12px;
-  color: #aaa;
+  color: #a89f91;
   text-align: center;
-  border-top: 1px solid #f0f0f0;
+  border-bottom: 0px;
+  border-top: 1px solid #e0d5c1;
+  background: #f8f6f0;
+  font-family: 'Georgia', 'Times New Roman', serif;
 }

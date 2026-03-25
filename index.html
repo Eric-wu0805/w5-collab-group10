@@ -12,7 +12,7 @@
   <div class="container">
     <header>
       <!-- 組長任務：把標題改成你們組的名字 -->
-      <h1>🤖 第 X 組的 Chatbot</h1>
+      <h1>🤖 第10組的 Chatbot</h1>
       <p class="subtitle">W5 PR 協作練習</p>
     </header>
 
@@ -24,6 +24,10 @@
     <button id="theme-toggle" onclick="toggleDarkMode()">🌓 切換模式</button>
 
 
+    <div class="search-area">
+      <input id="search-input" type="text" placeholder="搜尋對話紀錄..." oninput="searchMessages()">
+    </div>
+
     <div id="chat-box">
       <div class="message bot">
         嗨！這是我們組用 PR 協作做出來的 Chatbot 🎉
@@ -33,6 +37,8 @@
 
     <div class="input-area">
       <input id="user-input" type="text" placeholder="輸入訊息...">
+      <input type="file" id="sticker-input" accept="image/*" style="display: none;" onchange="sendSticker(event)">
+      <button onclick="document.getElementById('sticker-input').click()">貼圖</button>
       <button onclick="sendMessage()">送出</button>
       <!-- 組員 B 任務：在這裡加清除按鈕 -->
     </div>
@@ -43,6 +49,33 @@
 
   <script>
     let totalChars = 0;
+
+    function sendSticker(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const chatBox = document.getElementById('chat-box');
+        
+        const userDiv = document.createElement('div');
+        userDiv.className = 'message user sticker-message';
+        const img = document.createElement('img');
+        img.src = e.target.result;
+        img.className = 'sticker';
+        userDiv.appendChild(img);
+        chatBox.appendChild(userDiv);
+
+        const botDiv = document.createElement('div');
+        botDiv.className = 'message bot';
+        botDiv.textContent = '收到貼圖！';
+        chatBox.appendChild(botDiv);
+
+        chatBox.scrollTop = chatBox.scrollHeight;
+      };
+      reader.readAsDataURL(file);
+      event.target.value = '';
+    }
 
     function sendMessage() {
       const input = document.getElementById('user-input');
@@ -97,6 +130,18 @@
       document.body.classList.toggle('dark');
     }
 
+    function searchMessages() {
+      const searchText = document.getElementById('search-input').value.toLowerCase();
+      const messages = document.querySelectorAll('.message');
+
+      messages.forEach(msg => {
+        if (msg.textContent.toLowerCase().includes(searchText)) {
+          msg.style.display = '';
+        } else {
+          msg.style.display = 'none';
+        }
+      });
+    }
   </script>
 
 </body>

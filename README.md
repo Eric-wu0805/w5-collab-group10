@@ -164,11 +164,11 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 | 組員姓名 | 負責分支 | 主要修改內容 | PR 連結 | 是否完成 |
 | -------- | -------- | ------------ | ------- | -------- |
-|          |          |              |         | ✅ / ❌  |
-|          |          |              |         | ✅ / ❌  |
-|          |          |              |         | ✅ / ❌  |
-|          |          |              |         | ✅ / ❌  |
-|          |          |              |         | ✅ / ❌  |
+|吳宸宇    |feature/eric| 風格和搜尋記錄功能|[gh pr checkout 2](https://github.com/Eric-wu0805/w5-collab-group10/pull/2#issue-4132033175)| ✅ / ❌  |
+|林富閎    |feature/member-a|在 .message 裡加上時間戳 span|https://github.com/Eric-wu0805/w5-collab-group10/pull/3#issue-4132038751| ✅ / ❌  |
+|葉政毅          |feature/james|新增貼圖功能 |https://github.com/Eric-wu0805/w5-collab-group10/pull/4#issue-4132081179         | ✅ / ❌  |
+|林富閎|feature/member-c|在 header 下方加字數統計 p 元素 |https://github.com/Eric-wu0805/w5-collab-group10/pull/6#issue-4132093679| ✅ / ❌  |
+|林富閎          |feature/member-d|在 header 加深色模式切換按鈕|https://github.com/Eric-wu0805/w5-collab-group10/pull/7#issue-4132138921| ✅ / ❌  |
 
 ---
 
@@ -188,7 +188,8 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 （貼上截圖）
 
----
+---<img width="1713" height="885" alt="image" src="https://github.com/user-attachments/assets/c22de0c7-8fea-481b-a58f-d2651e8712e4" />
+
 
 ### 2-3 Code Review 截圖（必填）
 
@@ -203,6 +204,8 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 > 截圖：某個 PR 頁面顯示「Merged」紫色標籤
 
 （貼上截圖）
+<img width="1713" height="885" alt="image" src="https://github.com/user-attachments/assets/744748e4-31e3-4f04-9f45-ed812182a767" />
+
 
 ---
 
@@ -213,18 +216,21 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 （貼上截圖）
 
 ---
+<img width="1013" height="833" alt="image" src="https://github.com/user-attachments/assets/ef90d70f-f4b2-4606-9678-8acdf485110e" />
+
 
 ## 三、遇到的問題與解決方式
 
-**問題 1：**
 
-解決方式：
+問題 1：在實作上傳貼圖功能時，不知道如何將使用者選擇的圖片檔案即時預覽並顯示在對話框中。
+
+解決方式： 後來查閱資料發現可以使用原生的 FileReader API。我將原本的檔案上傳 <input> 隱藏起來，改作按鈕觸發；接著透過 readAsDataURL 方法把圖片轉換為 Base64 字串，再以 JavaScript 動態生成 <img> 元素並加到 DOM 結點（chat-box）中，順利解決了貼圖的即時顯示問題。
 
 ---
 
-**問題 2：**
+問題 2：修改完程式碼並 Commit 後，對於如何將新的變更更新到已經發起的 Pull Request (PR) 感到困惑。
 
-解決方式：
+解決方式： 經過實際測試與了解後，得知只要 PR 已經建立，它會持續追蹤來源分支（例如我的 feature/eric 分支）。因此，我只需要在本地端執行 git push 把新的 Commit 推送到相同的遠端分支（origin），GitHub 上的 PR 就會自動同步最新進度，不需要重新開一個新的 PR。
 
 ---
 
@@ -232,11 +238,15 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 每位組員各寫 2–3 句，說明這週對 PR / Code Review 的理解或感想
 
-**（組員姓名）：**
+**（吳宸宇）：**這次 W5 練習讓我實際走過了從切換分支 (Branch)、修改程式碼到發起 Pull Request 的完整 GitHub 協作流程。
 
-**（組員姓名）：**
+我為 Chatbot 重新設計了古典的歐式樣式，不僅讓畫面更有質感，也更熟悉了前端介面（HTML/CSS）的調整。
 
-**（組員姓名）：**
+透過這次體驗，我深刻體會到版本控制在團隊開發中的重要性，確保大家能安全且同時地進行專案開發。
+
+**（葉政毅）：**PR / Code Review 是把個人思考攤在團隊面前的過程，不只是抓錯，更是讓設計更清晰、讓知識流動。好的 review 讓人願意改進，而不是防禦；重點不在完美，而在持續變好。最終建立的是信任與可維護的程式品質。
+
+**（林富閎）：** 這次的 Pull Request 協作練習讓我更清楚理解團隊開發的流程與重要性。從建立分支、提交修改，到發送 Pull Request 並進行 Code Review，每個步驟都需要良好的溝通與規範，才能確保程式碼品質與專案穩定性。在審查他人程式碼的過程中，我也學習到不同的寫法與思考方式，對自己的程式設計能力有很大的幫助。整體而言，這次練習不僅提升了我對 Git 操作的熟悉度，也讓我體會到團隊協作的重要性。
 
 ---
 
