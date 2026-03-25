@@ -18,6 +18,8 @@
 
     <!-- 組員 A 任務：在 .message 裡加上時間戳 span -->
     <!-- 組員 C 任務：在 header 下方加字數統計 p 元素 -->
+    <p id="word-count">目前字數：0</p>
+
     <!-- 組員 D 任務：在 header 加深色模式切換按鈕 -->
 
     <div id="chat-box">
@@ -38,6 +40,8 @@
   </div>
 
   <script>
+    let totalChars = 0;
+
     function sendMessage() {
       const input = document.getElementById('user-input');
       const chatBox = document.getElementById('chat-box');
@@ -69,7 +73,9 @@
       botDiv.appendChild(botTimestamp);
       chatBox.appendChild(botDiv);
 
+      totalChars += text.length;
       input.value = '';
+      document.getElementById('word-count').textContent = `目前字數：${totalChars}`;
       chatBox.scrollTop = chatBox.scrollHeight;
     }
 
@@ -79,6 +85,11 @@
 
     // 組員 B 任務：在這裡加 clearChat() 函數
     // 組員 C 任務：在這裡加字數統計更新邏輯
+    document.getElementById('user-input').addEventListener('input', function() {
+      const currentCount = this.value.length;
+      document.getElementById('word-count').textContent = `目前字數：${totalChars + currentCount}`;
+    });
+
     // 組員 D 任務：在這裡加深色模式切換函數
   </script>
 
