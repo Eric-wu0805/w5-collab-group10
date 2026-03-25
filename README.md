@@ -169,6 +169,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 |葉政毅          |feature/james|新增貼圖功能 |https://github.com/Eric-wu0805/w5-collab-group10/pull/4#issue-4132081179         | ✅ / ❌  |
 |林富閎|feature/member-c|在 header 下方加字數統計 p 元素 |https://github.com/Eric-wu0805/w5-collab-group10/pull/6#issue-4132093679| ✅ / ❌  |
 |林富閎          |feature/member-d|在 header 加深色模式切換按鈕|https://github.com/Eric-wu0805/w5-collab-group10/pull/7#issue-4132138921| ✅ / ❌  |
+|張承新          |feature/member-b|新增清除對話按鈕與功能 |TBD| ✅ / ❌  |
 
 ---
 
@@ -247,6 +248,8 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 **（葉政毅）：**PR / Code Review 是把個人思考攤在團隊面前的過程，不只是抓錯，更是讓設計更清晰、讓知識流動。好的 review 讓人願意改進，而不是防禦；重點不在完美，而在持續變好。最終建立的是信任與可維護的程式品質。
 
 **（林富閎）：** 這次的 Pull Request 協作練習讓我更清楚理解團隊開發的流程與重要性。從建立分支、提交修改，到發送 Pull Request 並進行 Code Review，每個步驟都需要良好的溝通與規範，才能確保程式碼品質與專案穩定性。在審查他人程式碼的過程中，我也學習到不同的寫法與思考方式，對自己的程式設計能力有很大的幫助。整體而言，這次練習不僅提升了我對 Git 操作的熟悉度，也讓我體會到團隊協作的重要性。
+
+**（張承新）：**這次練習我負責實作「清除對話」功能。從建立分支到發 PR，讓我更熟悉 Git 的操作流程，也學會了如何撰寫清楚的 PR 描述與大家協作。
 
 ---
 
