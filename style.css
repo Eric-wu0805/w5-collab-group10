@@ -58,9 +58,14 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
 .timestamp {
   display: block;
   font-size: 11px;
+<<<<<<< HEAD
+  opacity: 0.6;
+  margin-top: 4px;
+=======
   opacity: 0.7;
   margin-top: 4px;
   text-align: right;
+>>>>>>> 3fbc1a0 (feat: 加入上午/下午時間戳到使用者與機器人訊息)
 }
 .message.user {
   background: #4f8ef7;

@@ -49,24 +49,40 @@
       userDiv.className = 'message user';
       // 組員 A 任務：在這裡加入時間戳
       const now = new Date();
-      const hours = now.getHours();
-      const period = hours < 12 ? '上午' : '下午';
-      const h12 = (hours % 12 || 12).toString().padStart(2, '0');
-      const timeStr = period + ' ' + h12 + ':' + now.getMinutes().toString().padStart(2, '0');
+<<<<<<< HEAD
+      const timeStr = now.toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit' });
       userDiv.textContent = text;
       const userTime = document.createElement('span');
       userTime.className = 'timestamp';
       userTime.textContent = '🕐 ' + timeStr;
       userDiv.appendChild(userTime);
+=======
+      const hours = now.getHours();
+      const period = hours < 12 ? '上午' : '下午';
+      const h12 = (hours % 12 || 12).toString().padStart(2, '0');
+      const timeStr = period + ' ' + h12 + ':' + now.getMinutes().toString().padStart(2, '0');
+      userDiv.textContent = text;
+      const timestamp = document.createElement('span');
+      timestamp.className = 'timestamp';
+      timestamp.textContent = timeStr;
+      userDiv.appendChild(timestamp);
+>>>>>>> 3fbc1a0 (feat: 加入上午/下午時間戳到使用者與機器人訊息)
       chatBox.appendChild(userDiv);
 
       const botDiv = document.createElement('div');
       botDiv.className = 'message bot';
       botDiv.textContent = `你說了「${text}」！`;
+<<<<<<< HEAD
       const botTime = document.createElement('span');
       botTime.className = 'timestamp';
       botTime.textContent = '🕐 ' + timeStr;
       botDiv.appendChild(botTime);
+=======
+      const botTimestamp = document.createElement('span');
+      botTimestamp.className = 'timestamp';
+      botTimestamp.textContent = timeStr;
+      botDiv.appendChild(botTimestamp);
+>>>>>>> 3fbc1a0 (feat: 加入上午/下午時間戳到使用者與機器人訊息)
       chatBox.appendChild(botDiv);
 
       input.value = '';
