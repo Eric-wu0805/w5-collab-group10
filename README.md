@@ -219,7 +219,10 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 （貼上截圖）
 
 ---
-<img width="1013" height="833" alt="image" src="https://github.com/user-attachments/assets/ef90d70f-f4b2-4606-9678-8acdf485110e" />
+<img width="600" height="801" alt="image" src="https://github.com/user-attachments/assets/bde86ac9-8f31-49c6-b62b-227f7a271437" />
+<img width="597" height="805" alt="image" src="https://github.com/user-attachments/assets/4fe8ae2b-66c0-4761-9db6-32f0ad715cec" />
+
+
 
 
 ## 三、遇到的問題與解決方式
