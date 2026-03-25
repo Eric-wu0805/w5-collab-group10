@@ -181,7 +181,8 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 （貼上截圖）
 
----
+---<img width="1646" height="803" alt="image" src="https://github.com/user-attachments/assets/8c9480da-43be-4203-8ecb-f7ea3a23e6e7" />
+
 
 ### 2-2 PR 描述截圖（必填）
 
