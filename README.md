@@ -204,6 +204,8 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 > 截圖：某個 PR 頁面顯示「Merged」紫色標籤
 
 （貼上截圖）
+<img width="1713" height="885" alt="image" src="https://github.com/user-attachments/assets/744748e4-31e3-4f04-9f45-ed812182a767" />
+
 
 ---
 
