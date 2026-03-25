@@ -168,7 +168,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 |林富閎    |feature/member-a|在 .message 裡加上時間戳 span|https://github.com/Eric-wu0805/w5-collab-group10/pull/3#issue-4132038751| ✅ / ❌  |
 |葉政毅          |feature/james|新增貼圖功能 |https://github.com/Eric-wu0805/w5-collab-group10/pull/4#issue-4132081179         | ✅ / ❌  |
 |林富閎|feature/member-c|在 header 下方加字數統計 p 元素 |https://github.com/Eric-wu0805/w5-collab-group10/pull/6#issue-4132093679| ✅ / ❌  |
-|          |          |              |         | ✅ / ❌  |
+|林富閎          |feature/member-d|在 header 加深色模式切換按鈕|https://github.com/Eric-wu0805/w5-collab-group10/pull/7#issue-4132138921| ✅ / ❌  |
 
 ---
 
