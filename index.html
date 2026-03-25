@@ -21,6 +21,8 @@
     <p id="word-count">目前字數：0</p>
 
     <!-- 組員 D 任務：在 header 加深色模式切換按鈕 -->
+    <button id="theme-toggle" onclick="toggleDarkMode()">🌓 切換模式</button>
+
 
     <div id="chat-box">
       <div class="message bot">
@@ -91,6 +93,10 @@
     });
 
     // 組員 D 任務：在這裡加深色模式切換函數
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+
   </script>
 
 </body>
