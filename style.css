@@ -60,6 +60,19 @@ header .subtitle { font-size: 14px; opacity: 0.9; margin-top: 8px; font-style: i
   box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
 }
 
+/* 貼圖樣式 */
+.message.sticker-message {
+  background: transparent;
+  padding: 0;
+}
+
+.message .sticker {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 12px;
+  display: block;
+}
+
 /* ── 組員 A 任務：在這裡加 .timestamp 樣式 ── */
 .message.user {
   background: #5c1b22;

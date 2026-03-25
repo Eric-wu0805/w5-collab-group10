@@ -32,6 +32,8 @@
 
     <div class="input-area">
       <input id="user-input" type="text" placeholder="輸入訊息...">
+      <input type="file" id="sticker-input" accept="image/*" style="display: none;" onchange="sendSticker(event)">
+      <button onclick="document.getElementById('sticker-input').click()">貼圖</button>
       <button onclick="sendMessage()">送出</button>
       <!-- 組員 B 任務：在這裡加清除按鈕 -->
     </div>
@@ -41,6 +43,33 @@
   </div>
 
   <script>
+    function sendSticker(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const chatBox = document.getElementById('chat-box');
+        
+        const userDiv = document.createElement('div');
+        userDiv.className = 'message user sticker-message';
+        const img = document.createElement('img');
+        img.src = e.target.result;
+        img.className = 'sticker';
+        userDiv.appendChild(img);
+        chatBox.appendChild(userDiv);
+
+        const botDiv = document.createElement('div');
+        botDiv.className = 'message bot';
+        botDiv.textContent = '收到貼圖！';
+        chatBox.appendChild(botDiv);
+
+        chatBox.scrollTop = chatBox.scrollHeight;
+      };
+      reader.readAsDataURL(file);
+      event.target.value = '';
+    }
+
     function sendMessage() {
       const input = document.getElementById('user-input');
       const chatBox = document.getElementById('chat-box');
